@@ -1,0 +1,262 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 1</title>
+</head>
+<body>
+    <script>
+        let currentDate = new Date(); 
+        document.write("<h2>Current Date and Time:</h2>");
+        document.write("<p>" + currentDate + "</p>");
+    </script>
+</body>
+</html>
+ -->
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 2</title>
+</head>
+<body>
+    <script>
+        let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        
+        let currentDate = new Date(); 
+        let currentMonth = months[currentDate.getMonth()]; 
+
+        alert("Current month: " + currentMonth);
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 3</title>
+</head>
+<body>
+    <script>
+        let days = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+
+        let currentDate = new Date(); 
+        let currentDay = days[currentDate.getDay()]; 
+        alert("Today is: " + currentDay);
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 4</title>
+</head>
+<body>
+    <script>
+        let currentDate = new Date(); 
+        let day = currentDate.getDay(); 
+
+        if (day === 0 || day === 6) {
+            alert("It’s Fun day");
+        }
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 5</title>
+</head>
+<body>
+    <script>
+        let currentDate = new Date(); 
+        let dayOfMonth = currentDate.getDate();
+
+        if (dayOfMonth < 16) {
+            alert("First fifteen days of the month");
+        } else {
+            alert("Last days of the month");
+        }
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 6</title>
+</head>
+<body>
+    <script>
+        timeSinceEpoch = new Date().getTime() / (1000 * 60); 
+        alert("Minutes since Jan. 1, 1970: " + Math.floor(timeSinceEpoch));
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 7</title>
+</head>
+<body>
+    <script>
+        let hours = new Date().getHours(); 
+        if (hours < 12) {
+            alert("It's AM");
+        } else {
+            alert("It's PM");
+        }
+    </script>
+</body>
+</html>
+ -->
+
+
+ <!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 8</title>
+</head>
+<body>
+    <script>
+        let laterDate = new Date(2020, 11, 31); 
+        document.write("Later Date: " + laterDate);
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 9</title>
+</head>
+<body>
+    <script>
+        let ramadanStart = new Date(2025, 3, 18); 
+        let today = new Date(); 
+
+        let diffInMilliseconds = today - ramadanStart;
+
+        let daysPassed = Math.floor(diffInMilliseconds / (1000 * 60 * 60 * 24));
+
+        alert("Days passed since 1st Ramadan 2015: " + daysPassed);
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 10</title>
+</head>
+<body>
+    <script>
+        let referenceDate = new Date(1970, 0, 1); 
+        let startOf2015 = new Date(2015, 0, 1); 
+
+        
+        let diffInMilliseconds = startOf2015 - referenceDate;
+
+        
+        let elapsedSeconds = Math.floor(diffInMilliseconds / 1000);
+
+        document.write("<h2>Seconds elapsed between Jan 1, 1970 and Jan 1, 2015: " + elapsedSeconds + "</h2>");
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 11</title>
+</head>
+<body>
+    <script>
+        let currentDate = new Date(); 
+        let currentHour = currentDate.getHours(); 
+
+        currentDate.setHours(currentHour + 1); 
+
+        document.write("<h2>Updated Date and Time: " + currentDate + "</h2>");
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 12</title>
+</head>
+<body>
+    <script>
+        let currentDate = new Date(); 
+        currentDate.setFullYear(currentDate.getFullYear() - 100); 
+
+        alert("Date 100 years back: " + currentDate);
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 13</title>
+</head>
+<body>
+    <script>
+        let age = prompt("Enter your age:"); 
+        let currentYear = new Date().getFullYear(); 
+        let birthYear = currentYear - age; 
+
+        document.write("<h2>Your Birth Year is: " + birthYear + "</h2>");
+    </script>
+</body>
+</html> -->
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>QUESTION 14</title>
+</head>
+<body>
+    <script>
+       
+        let customerName = prompt("Enter Customer Name:");
+        let currentMonth = new Date().toLocaleString('default', { month: 'long' }); 
+        let units = parseFloat(prompt("Enter Number of Units:"));
+        let chargesPerUnit = parseFloat(prompt("Enter Charges per Unit:"));
+        let latePaymentSurcharge = 350; 
+
+        
+        let netAmount = (units * chargesPerUnit).toFixed(2); 
+        let grossAmount = (parseFloat(netAmount) + latePaymentSurcharge).toFixed(2); 
+       
+        document.write("<h2>K-Electric Bill</h2>");
+        document.write("<p><b>Customer Name:</b> " + customerName + "</p>");
+        document.write("<p><b>Current Month:</b> " + currentMonth + "</p>");
+        document.write("<p><b>Number of Units:</b> " + units + "</p>");
+        document.write("<p><b>Charges per Unit:</b> " + chargesPerUnit + "</p>");
+        document.write("<p><b>Net Amount Payable (within Due Date):</b> " + netAmount + " PKR</p>");
+        document.write("<p><b>Late Payment Surcharge:</b> " + latePaymentSurcharge + " PKR</p>");
+        document.write("<p><b>Gross Amount Payable (after Due Date):</b> " + grossAmount + " PKR</p>");
+    </script>
+</body>
+</html> -->
